@@ -16,7 +16,7 @@ class PizzasTable extends Migration
         Schema::create('pizzas', function (Blueprint $table) {
             $table->id();
             $table->string('pizza_name')->unique();
-            $table->float('pizza_price');
+            $table->float('pizza_price', 12, 2);
             $table->text('pizza_description');
             $table->string('pizza_image');
             $table->timestamps();
