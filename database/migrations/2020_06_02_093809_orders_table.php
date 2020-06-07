@@ -18,7 +18,7 @@ class OrdersTable extends Migration
             $table->string('customer_name');
             $table->string('customer_address');
             $table->string('customer_phone');
-            // $table->json('order_list');
+            $table->longText('order_list');
             $table->float('price');
             $table->float('total_price');
             $table->timestamps();
